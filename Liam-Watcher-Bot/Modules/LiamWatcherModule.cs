@@ -1,6 +1,7 @@
 ﻿using Discord;
 using Discord.Commands;
 using Discord.WebSocket;
+using Liam_Watcher_Bot.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,8 +12,14 @@ namespace Liam_Watcher_Bot.Modules
 {
     public class LiamWatcherModule : ModuleBase<SocketCommandContext>
     {
-        private DiscordSocketClient DiscordSocketClient { get; set; }
+        public LiamWatcherService LiamWatcherService {get; set;}
 
-        
+        [Command("leave")]
+        [Alias("liam")]
+        [Summary("Get how many times Liam has left voice.")]
+        public async Task ReportLiamLeaveCount()
+        {
+            await ReplyAsync($"Liam has left voice {LiamWatcherService.liamLeaveCount} times.");
+        }
     }
 }
