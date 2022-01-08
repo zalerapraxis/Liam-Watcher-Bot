@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31829.152
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Liam-Watcher-Bot", "Liam-Watcher-Bot\Liam-Watcher-Bot.csproj", "{AE7F932C-67ED-40B0-A904-BD18EE2A78F3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AE7F932C-67ED-40B0-A904-BD18EE2A78F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE7F932C-67ED-40B0-A904-BD18EE2A78F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE7F932C-67ED-40B0-A904-BD18EE2A78F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE7F932C-67ED-40B0-A904-BD18EE2A78F3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {566C41AB-F115-4C52-B63A-75482E2AD1C2}
+	EndGlobalSection
+EndGlobal
