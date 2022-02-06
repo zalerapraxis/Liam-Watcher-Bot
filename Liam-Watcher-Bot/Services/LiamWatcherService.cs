@@ -88,7 +88,7 @@ namespace Liam_Watcher_Bot.Services
             }
         }
 
-        private async Task PostAboutLiamRagequit()
+        public async Task PostAboutLiamRagequit()
         {
             var channel = _discord.GetChannel(liamVoiceChannel) as ITextChannel;
 
@@ -107,6 +107,7 @@ namespace Liam_Watcher_Bot.Services
                 $"Wiam has weft voice {liamLeaveCount} times. Make suwe tuwu uwu at him now thawt he's bawck.",
                 $"Once again, Liam has left voice. This is the {liamLeaveCount}{GetCorrectOrdinal(liamLeaveCount)} time. Oh shit, he's back, stop talking.",
                 $"For the {liamLeaveCount}{GetCorrectOrdinal(liamLeaveCount)} time, Liam has ragequit from voice.",
+                $"You're gonna love my nuts, he says. All {liamLeaveCount} of them.",
             };
             List<string> highAngerList = new List<string>
             {
