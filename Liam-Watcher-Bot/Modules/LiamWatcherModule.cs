@@ -19,7 +19,7 @@ namespace Liam_Watcher_Bot.Modules
         [Summary("Get how many times Liam has left voice.")]
         public async Task ReportLiamLeaveCount()
         {
-            await ReplyAsync($"Liam has left voice {LiamWatcherService.liamLeaveCount} times.");
+            await LiamWatcherService.PostAboutLiamRagequit();
         }
     }
 }
