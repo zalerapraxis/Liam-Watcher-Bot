@@ -41,8 +41,15 @@ namespace LiamWatcher
             {
                 var result = await _commands.ExecuteAsync(context, argPos, _provider);     // Execute the command
 
-                if (!result.IsSuccess)     // If not successful, reply with the error.
-                    await context.Channel.SendMessageAsync(result.ToString());
+                // handle command failed - aka not a command
+                if (!result.IsSuccess)
+                {
+                    // don't track unknown commands, like someone sending "..."
+                    // don't track commands that just didn't get input correctly
+                    if (result.Error != CommandError.UnknownCommand)
+                        await context.Channel.SendMessageAsync($"Command failed: {result}");
+
+                }
             }
         }
     }
